@@ -50,30 +50,24 @@
               </a>
               <span class="main-navigation__likes-number"> 0 </span>
             </li>
-            <li class="main-navigation__item">
-              <button class="btn">
-                <span> Хочу сюда! </span>
-              </button>
-            </li>
           </ul>
+          <button class="btn">
+            <span> Хочу сюда! </span>
+          </button>
         </nav>
       </div>
     </header>
 
     <main class="page-content">
       <section class="top-info">
-        <div class="top-info__text top-info__text--welcome">
-          <span class="visually-hidden">Логотип "Welcome gargeous"</span>
-        </div>
-        <div class="top-info__text top-info__text--main-title">
-          <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-        </div>
+        <h1 class="visually-hidden">Седона - город в Аризоне</h1>
+        <div class="top-info__background"></div>
         <img
-          class="top-info__background"
+          class="top-info__title-img"
           src="/"
-          alt="Большое фото Гранд-каньона"
-          width="1200"
-          height="485"
+          width="458"
+          height="352"
+          alt="Welcome gargeous, Седона - город в Аризоне, because the grand canyon sucks"
         />
       </section>
 
@@ -111,37 +105,26 @@
               </div>
               <ul class="reason__advantages-list">
                 <li class="reason__advantages-item">
-                  <section class="advantage">
-                    <div class="advanige__logo">
-                      <span class="visually-hidden">Иконка в виде домика</span>
-                    </div>
-                    <h4 class="advanige__title">Жильё</h4>
-                    <p class="advanige__description">
+                  <section class="advantage advantage--housing">
+                    <h4 class="advantage__title">Жильё</h4>
+                    <p class="advantage__description">
                       Рекомендуем пожить в настоящем мотеле, всё как в кино!
                     </p>
                   </section>
                 </li>
                 <li class="reason__advantages-item">
-                  <section class="advantage">
-                    <div class="advanige__logo">
-                      <span class="visually-hidden"
-                        >Иконка в виде гамбургера</span
-                      >
-                    </div>
-                    <h4 class="advanige__title">Еда</h4>
-                    <p class="advanige__description">
+                  <section class="advantage advantage--food">
+                    <h4 class="advantage__title">Еда</h4>
+                    <p class="advantage__description">
                       Всегда заказывайте топовый фирменный бургер, вы не
                       разочаруетесь!
                     </p>
                   </section>
                 </li>
                 <li class="reason__advantages-item">
-                  <section class="advantage">
-                    <div class="advanige__logo">
-                      <span class="visually-hidden">Иконка в виде подарка</span>
-                    </div>
-                    <h4 class="advanige__title">Сувениры</h4>
-                    <p class="advanige__description">
+                  <section class="advantage advantage--souvenirs">
+                    <h4 class="advantage__title">Сувениры</h4>
+                    <p class="advantage__description">
                       Не только китайского, но и настоящего местного
                       производства!
                     </p>
@@ -155,13 +138,9 @@
             <section class="reason">
               <div class="reason__preview reason__preview--reversed">
                 <div class="reason__info">
-                  <h3 class="reason__text reason__text--title">
-                    Там есть мост дьявола
-                  </h3>
-                  <span class="reason__text reason__text--number">
-                    — №2 —
-                  </span>
-                  <p class="reason__text reason__text--description">
+                  <h3 class="reason__title">Там есть мост дьявола</h3>
+                  <span class="reason__number"> — №2 — </span>
+                  <p class="reason__description">
                     Да, по нему можно пройти! Если вы осмелитесь, разумеется
                   </p>
                 </div>
@@ -178,11 +157,9 @@
 
           <li class="about__item about__item--simple">
             <section class="reason reason--simple">
-              <h3 class="reason__text reason__text--title">
-                Небольшая площадь
-              </h3>
-              <span class="reason__text reason__text--number"> — №3 — </span>
-              <p class="reason__text reason__text--description">
+              <h3 class="reason__title">Небольшая площадь</h3>
+              <span class="reason__number"> — №3 — </span>
+              <p class="reason__description">
                 Все достопримечательности находятся очень близко
               </p>
             </section>
@@ -190,9 +167,9 @@
 
           <li class="about__item about__item--simple">
             <section class="reason reason--simple">
-              <h3 class="reason__text reason__text--title">Красивая дорога</h3>
-              <span class="reason__text reason__text--number"> — №4 — </span>
-              <p class="reason__text reason__text--description">
+              <h3 class="reason__title">Красивая дорога</h3>
+              <span class="reason__number"> — №4 — </span>
+              <p class="reason__description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </section>
@@ -211,7 +188,10 @@
       </section>
 
       <section class="booking">
-        <h4 class="booking__title">Заинтересовались?</h4>
+        <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
+        <p class="booking__title">
+          <strong>Заинтересовались?</strong>
+        </p>
         <p class="booking__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
@@ -220,7 +200,7 @@
       </section>
 
       <section class="subscribe">
-        <h4 class="subscribe__title">Подпишитесь на рассылку</h4>
+        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
