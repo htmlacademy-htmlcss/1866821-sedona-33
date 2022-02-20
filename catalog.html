@@ -3,6 +3,7 @@
   <head>
     <title>Гостиницы города Седона</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -12,22 +13,22 @@
           width="139"
           height="70"
           alt="Логотип города Седона"
-          src="/"
+          src="img/common/logo_sedona_main.png"
         />
         <nav class="main-navigation main-navigation--main">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="/">Главная</a>
+              <a
+                class="main-navigation__link main-navigation__link--current"
+                href="/"
+                >Главная</a
+              >
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="/about">О Седоне</a>
             </li>
             <li class="main-navigation__item">
-              <a
-                class="main-navigation__link main-navigation__link--current"
-                href="/hotels"
-                >Гостиницы</a
-              >
+              <a class="main-navigation__link" href="/hotels">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -51,7 +52,7 @@
               <span class="main-navigation__likes-number"> 0 </span>
             </li>
           </ul>
-          <button class="btn">
+          <button class="btn" type="button">
             <span> Хочу сюда! </span>
           </button>
         </nav>
@@ -73,6 +74,7 @@
                   <span class="visually-hidden"> Главная </span>
                 </a>
               </li>
+              <li class="breadcrumbs__item breadcrumbs__item--next"></li>
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link"> Гостиницы </a>
               </li>
@@ -189,7 +191,7 @@
                   <button class="btn btn--blue" type="submit">
                     <span> Применить </span>
                   </button>
-                  <button class="btn btn--blue" type="submit">
+                  <button class="btn btn--blue" type="reset">
                     <span> Сбросить </span>
                   </button>
                 </div>
@@ -213,7 +215,10 @@
             </select>
 
             <div class="catalog-btns-wrap">
-              <a href="#" class="btn btn--light btn--catalog-card">
+              <a
+                href="#"
+                class="btn btn--light btn--mode-checked btn--catalog-card"
+              >
                 <span class="visually-hidden">Показать карточки</span>
               </a>
               <a href="#" class="btn btn--light btn--catalog-slide">
@@ -234,13 +239,12 @@
                     width="300"
                     height="206"
                     alt="Здание, выступающее из скалы"
-                    src="/"
+                    src="img/catalog/hotel_amara_resort.jpg"
                   />
                   <h3 class="hotel-card__type">Amara Resort & Spa</h3>
                 </a>
                 <div class="hotel-card__price">
                   <span class="hotel-card__price-title">Гостиница</span>
-                  <!-- возможна реализация через псевдоэлементы -->
                   <div class="hotel-card__price-row">
                     <span class="hotel-card__price-txt">От</span>
                     <span class="hotel-card__price-number">4000</span>
@@ -248,17 +252,16 @@
                   </div>
                 </div>
                 <div class="hotel-card__btns">
-                  <button class="btn">
+                  <button class="btn" type="button">
                     <span> Подробнее </span>
                   </button>
-                  <button class="btn btn--blue">
+                  <button class="btn btn--blue" type="button">
                     <span> В избранное </span>
                   </button>
                 </div>
                 <div class="hotel-card__rating">
                   <span class="hotel-card__rating-stars">★★★★</span>
                   <div class="hotel-card__rating-row">
-                    <!-- возможна реализация через псевдоэлементы -->
                     <span class="hotel-card__rating-txt"> Рейтинг: </span>
                     <span class="hotel-card__rating-number"> 8,5 </span>
                   </div>
@@ -273,7 +276,7 @@
                     width="300"
                     height="206"
                     alt="Дом на фоне каменной горы и степи"
-                    src="/"
+                    src="img/catalog/hotel_desert_quail.jpg"
                   />
                   <h3 class="hotel-card__type">Desert Quail Inn</h3>
                 </a>
@@ -286,10 +289,10 @@
                   </div>
                 </div>
                 <div class="hotel-card__btns">
-                  <button class="btn">
+                  <button class="btn" type="button">
                     <span> Подробнее </span>
                   </button>
-                  <button class="btn btn--blue">
+                  <button class="btn btn--blue" type="button">
                     <span> В избранное </span>
                   </button>
                 </div>
@@ -310,7 +313,7 @@
                     width="300"
                     height="206"
                     alt="Каменная гора в степи"
-                    src="/"
+                    src="img/catalog/hotel_villas_pocco.jpg"
                   />
                   <h3 class="hotel-card__type">Villas at Poco Diablo</h3>
                 </a>
@@ -323,10 +326,10 @@
                   </div>
                 </div>
                 <div class="hotel-card__btns">
-                  <button class="btn">
+                  <button class="btn" type="button">
                     <span> Подробнее </span>
                   </button>
-                  <button class="btn btn--blue">
+                  <button class="btn btn--blue" type="button">
                     <span> В избранное </span>
                   </button>
                 </div>
@@ -348,7 +351,7 @@
                     width="300"
                     height="206"
                     alt="Серпантин в горах с хвойным лесом"
-                    src="/"
+                    src="img/catalog/hotel_green_tree.jpg"
                   />
                   <h3 class="hotel-card__type">GreenTree Inn</h3>
                 </a>
@@ -361,10 +364,10 @@
                   </div>
                 </div>
                 <div class="hotel-card__btns">
-                  <button class="btn">
+                  <button class="btn" type="button">
                     <span> Подробнее </span>
                   </button>
-                  <button class="btn btn--blue">
+                  <button class="btn btn--blue" type="button">
                     <span> В избранное </span>
                   </button>
                 </div>
@@ -379,7 +382,7 @@
             </li>
           </ul>
           <div class="hotels-catalog__more-hotels">
-            <button class="btn btn--blue btn--wide">
+            <button class="btn btn--blue btn--wide" type="button">
               <span> Загрузить ещё </span>
             </button>
           </div>
@@ -410,7 +413,7 @@
                 >
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
+                <a class="pagination__link" href="#">10</a>
               </li>
             </ul>
 
@@ -435,8 +438,10 @@
       </section>
 
       <section class="subscribe subscribe--no-background">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <p class="subscribe__description">
+        <h2 class="subscribe__title subscribe__title--dark">
+          Подпишитесь на рассылку
+        </h2>
+        <p class="subscribe__description subscribe__description--dark">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form
@@ -450,8 +455,8 @@
             name="user-email"
             placeholder="Ваш e-mail"
           />
-          <button class="subscribe__btn" type="submit">
-            Поиск гостиницы в седоне
+          <button class="btn btn--interest-blue" type="submit">
+            Подписаться
           </button>
         </form>
       </section>
@@ -492,7 +497,12 @@
       </address>
 
       <a class="page-footer__logo" href="https://htmlacademy.ru">
-        <img src="/" width="115" height="34" alt="HTML Academy" />
+        <img
+          src="img/common/logo_htmlacademy.svg"
+          width="115"
+          height="34"
+          alt="HTML Academy"
+        />
       </a>
     </footer>
   </body>
