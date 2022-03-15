@@ -17,13 +17,9 @@
             src="img/common/logo_sedona_main.svg"
           />
           <nav class="main-navigation main-navigation--main">
-            <ul class="main-navigation__list">
-              <li class="main-navigation__item">
-                <a
-                  class="main-navigation__link main-navigation__link--current"
-                  href="index.html"
-                  >Главная</a
-                >
+            <ul class="main-navigation__list main-navigation__list--main">
+              <li class="main-navigation__item main-navigation__item--current">
+                <a class="main-navigation__link" href="index.html">Главная</a>
               </li>
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="about.html">О Седоне</a>
@@ -37,7 +33,7 @@
           </nav>
           <nav class="main-navigation main-navigation--user">
             <ul class="main-navigation__list main-navigation__list--user">
-              <li class="main-navigation__item">
+              <li class="main-navigation__item main-navigation__item--search">
                 <a
                   class="main-navigation__link main-navigation__link--search"
                   href="#"
@@ -45,7 +41,7 @@
                   <span class="visually-hidden"> Поиск </span>
                 </a>
               </li>
-              <li class="main-navigation__item">
+              <li class="main-navigation__item main-navigation__item--likes">
                 <a
                   class="main-navigation__link main-navigation__link--likes"
                   href="#"
@@ -55,7 +51,7 @@
                 <span class="main-navigation__likes-number"> 12 </span>
               </li>
             </ul>
-            <button class="btn">
+            <button class="btn btn--main-nav">
               <span> Хочу сюда! </span>
             </button>
           </nav>
@@ -111,22 +107,30 @@
                   </section>
                 </li>
                 <li
-                  class="about__item-advantages-item about__item-advantages-item--light"
+                  class="about__item-advantages-item about__item-advantages-item--light about__item-advantages-item--food"
                 >
                   <section class="advantage advantage--food">
                     <h4 class="advantage__title">Еда</h4>
-                    <p class="advantage__description">
-                      Всегда заказывайте топовый фирменный бургер, вы не
-                      разочаруетесь!
+                    <p
+                      class="advantage__description advantage__description--food"
+                    >
+                      Всегда заказывайте
+                      <br />
+                      топовый фирменный бургер, вы не разочаруетесь!
                     </p>
                   </section>
                 </li>
-                <li class="about__item-advantages-item">
+                <li
+                  class="about__item-advantages-item about__item-advantages-item--souvenirs"
+                >
                   <section class="advantage advantage--souvenirs">
                     <h4 class="advantage__title">Сувениры</h4>
-                    <p class="advantage__description">
-                      Не только китайского, но и настоящего местного
-                      производства!
+                    <p
+                      class="advantage__description advantage__description--souvenirs"
+                    >
+                      Не только китайского,
+                      <br />
+                      но и настоящего местного производства!
                     </p>
                   </section>
                 </li>
@@ -155,7 +159,9 @@
                 Небольшая площадь
               </h3>
               <span class="about__item-number"> — №3 — </span>
-              <p class="about__item-description">
+              <p
+                class="about__item-description about__item-description--simple"
+              >
                 Все достопримечательности находятся очень близко
               </p>
             </li>
@@ -167,7 +173,9 @@
                 Красивая дорога
               </h3>
               <span class="about__item-number"> — №4 — </span>
-              <p class="about__item-description">
+              <p
+                class="about__item-description about__item-description--simple"
+              >
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
@@ -177,7 +185,9 @@
                 Мало туристов
               </h3>
               <span class="about__item-number"> — №5 — </span>
-              <p class="about__item-text about__item-text--description">
+              <p
+                class="about__item-description about__item-description--simple"
+              >
                 Большинство едет в Гранд Каньон и толпится там
               </p>
             </li>
@@ -190,8 +200,11 @@
             <strong>Заинтересовались?</strong>
           </p>
           <p class="booking__description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,
+            <br />
+            <span class="booking__description-low">
+              и мы покажем вам лучшие предложения гостиниц в Седоне
+            </span>
           </p>
           <button class="btn btn--wide">Поиск гостиницы в седоне</button>
         </section>
@@ -211,8 +224,10 @@
               type="email"
               name="user-email"
               placeholder="Ваш e-mail"
+              autocomplete="off"
+              required
             />
-            <button class="btn btn--interest-blue" type="submit">
+            <button class="btn btn--interest-blue" type="submit" value="submit">
               Подписаться
             </button>
           </form>
@@ -223,18 +238,18 @@
         <ul class="page-footer__socials-list">
           <li class="page-footer__socials-item">
             <a
-              class="social-btn social-btn--facebook"
-              href="https://www.facebook.com/htmlacademy"
-            >
-              <span class="visually-hidden"> Facebook </span>
-            </a>
-          </li>
-          <li class="page-footer__socials-item">
-            <a
               class="social-btn social-btn--twitter"
               href="https://twitter.com/htmlacademy_ru"
             >
               <span class="visually-hidden"> Twitter </span>
+            </a>
+          </li>
+          <li class="page-footer__socials-item">
+            <a
+              class="social-btn social-btn--facebook"
+              href="https://www.facebook.com/htmlacademy"
+            >
+              <span class="visually-hidden"> Facebook </span>
             </a>
           </li>
           <li class="page-footer__socials-item">
