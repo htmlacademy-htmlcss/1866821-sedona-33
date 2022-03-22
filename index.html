@@ -22,7 +22,7 @@
                 <a class="main-navigation__link" href="index.html">Главная</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="about.html">О Седоне</a>
+                <a class="main-navigation__link" href="#">О Седоне</a>
               </li>
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="catalog.html"
@@ -342,31 +342,190 @@
 
       <section class="modal-container">
         <div class="modal">
+          <div class="modal__header">
+            <div class="modal__content">
+              <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+            </div>
+            <button class="modal__close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
 
-            <div class="modal__header">
-              <div class="modal__content">
-                <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="modal__form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="modal__form-row">
+              <label class="modal__checkin-label" for="checkin-date"
+                >Дата заезда:</label
+              >
+              <div class="modal__input-wrap modal__input-wrap--colored">
+                <input
+                  class="modal__checkin-field"
+                  type="text"
+                  id="checkin-date"
+                  value="27 апреля 2020"
+                  name="checkin-date"
+                />
+                <span>Мы не можем отправить вас в прошлое.</span>
               </div>
-              <button class="modal__close-button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
+            </div>
+            <div class="modal__form-row">
+              <label class="modal__checkout-label" for="checkout-date"
+                >Дата выезда:</label
+              >
+              <div class="modal__input-wrap">
+                <input
+                  class="modal__checkout-field"
+                  type="text"
+                  id="checkout-date"
+                  value="1 сентября 2021"
+                  name="checkout-date"
+                />
+                <span>На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+            <div class="modal__form-row">
+              <div class="modal__form-col">
+                <label class="modal__adults-label">Взрослые:</label>
+                <div class="modal__adults">
+                  <button
+                    class="modal__sign modal__sign--minus"
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                  >
+                    <svg
+                      width="13"
+                      height="1"
+                      viewBox="0 0 13 1"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="modal__sign-icon"
+                        d="M0 0L0 1L13 1V0L0 0Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    class="modal__adults-number"
+                    type="number"
+                    min="0"
+                    value="1"
+                    max="200"
+                    name="adults-number"
+                    readonly
+                  />
+                  <button
+                    class="modal__sign modal__sign--plus"
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                  >
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g class="modal__sign-icon">
+                        <path
+                          d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="modal__form-col modal__form-col--caution">
+                <label class="modal__children-label">Дети:</label>
+                <span class="modal__children-caution"
+                  ><svg
+                    width="1"
+                    height="9"
+                    viewBox="0 0 1 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_18711_289)">
+                      <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                      <path d="M1 0H0V1H1V0Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_18711_289">
+                        <rect width="1" height="9" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="modal__children-popup"
+                    >Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются
+                    бесплатно.</span
+                  >
+                </span>
+                <div class="modal__children">
+                  <button
+                    class="modal__sign modal__sign--minus"
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                  >
+                    <svg
+                      width="13"
+                      height="1"
+                      viewBox="0 0 13 1"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="modal__sign-icon"
+                        d="M0 0L0 1L13 1V0L0 0Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    class="modal__children-number"
+                    type="number"
+                    min="0"
+                    value="1"
+                    max="200"
+                    name="children-number"
+                    readonly
+                  />
+                  <button
+                    class="modal__sign modal__sign--plus"
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                  >
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g class="modal__sign-icon">
+                        <path
+                          d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="modal__form-row">
-                <label class="modal__checkin-label" for="checkin-date">Дата заезда</label>
-                <input class="modal__checkin-field" type="date" id="checkin-date"  name="checkin-date">
-                <span class="modal__checkin-custom"></span>
-              </p>
-              <p class="modal__form-row">
-                <label class="modal__checkout-label" for="checkout-date">Дата выезда</label>
-                <input class="modal__checkout-field" type="password" id="checkout-date" name="checkout-date" placeholder="Пароль">
-              </p>
-            </form>
-
+            <button class="btn btn--interest-blue btn--wide" type="submit">
+              <span> Найти </span>
+            </button>
+          </form>
         </div>
-      <section>
-
+      </section>
     </div>
   </body>
 </html>
