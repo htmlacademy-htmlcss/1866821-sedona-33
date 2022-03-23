@@ -9,13 +9,14 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header__inner">
-          <img
-            class="page-header__logo"
-            width="139"
-            height="70"
-            alt="Логотип города Седона"
-            src="img/common/logo_sedona_main.svg"
-          />
+          <a href="index.html" class="page-header__logo">
+            <img
+              width="139"
+              height="70"
+              alt="Логотип города Седона"
+              src="img/common/logo_sedona_main.svg"
+            />
+          </a>
           <nav class="main-navigation main-navigation--main">
             <ul class="main-navigation__list main-navigation__list--main">
               <li class="main-navigation__item">
@@ -72,14 +73,14 @@
                     />
                   </svg>
 
-                  <span class="visually-hidden"> Количество лайков </span>
+                  <span class="visually-hidden">
+                    Количество гостиниц в избранном
+                  </span>
                 </a>
-                <span class="main-navigation__likes-number"> 12 </span>
+                <span class="main-navigation__hotels-number"> 12 </span>
               </li>
             </ul>
-            <button class="btn btn--main-nav">
-              <span> Хочу сюда! </span>
-            </button>
+            <a href="#" class="btn btn--main-nav">Хочу сюда!</a>
           </nav>
         </div>
       </header>
@@ -91,7 +92,7 @@
               <h1 class="hotels-catalog__title">Гостиницы Седоны</h1>
 
               <ul class="breadcrumbs breadcrumbs--catalog">
-                <li class="breadcrumbs__item" tabindex="0">
+                <li class="breadcrumbs__item">
                   <a
                     class="breadcrumbs__link breadcrumbs__link--home"
                     href="/index.html"
@@ -99,8 +100,7 @@
                     <span class="visually-hidden"> Главная </span>
                   </a>
                 </li>
-                <li class="breadcrumbs__item breadcrumbs__item--next"></li>
-                <li class="breadcrumbs__item" tabindex="0">
+                <li class="breadcrumbs__item">
                   <a class="breadcrumbs__link"> Гостиницы </a>
                 </li>
               </ul>
@@ -216,6 +216,7 @@
                 <div class="catalog-filter__second-row">
                   <fieldset class="catalog-filter__range">
                     <legend class="catalog-filter__title">Стоимость, ₽:</legend>
+
                     <div class="catalog-filter__inputs">
                       <label class="catalog-filter__inputs-row">
                         <input
@@ -226,9 +227,11 @@
                         />
                         <span class="catalog-filter__text">от</span>
                       </label>
-                      <label class="catalog-filter__inputs-row">
+                      <label
+                        class="catalog-filter__inputs-row catalog-filter__inputs-row--right"
+                      >
                         <input
-                          class="catalog-filter__input"
+                          class="catalog-filter__input catalog-filter__input--right"
                           type="number"
                           value="9000"
                           name="max-price"
@@ -262,10 +265,10 @@
 
                   <div class="catalog-filter__buttons">
                     <button class="btn btn--blue" type="submit">
-                      <span> Применить </span>
+                      Применить
                     </button>
                     <button class="btn btn--blue-reset" type="reset">
-                      <span> Сбросить </span>
+                      Сбросить
                     </button>
                   </div>
                 </div>
@@ -308,7 +311,7 @@
             <ul class="card-list">
               <li class="card-list__item">
                 <div class="hotel-card">
-                  <a class="hotel-card__link">
+                  <a href="#" class="hotel-card__link">
                     <img
                       class="hotel-card__img"
                       width="300"
@@ -328,10 +331,10 @@
                   </div>
                   <div class="hotel-card__btns">
                     <button class="btn btn--card" type="button">
-                      <span> Подробнее </span>
+                      Подробнее
                     </button>
                     <button class="btn btn--blue" type="button">
-                      <span> В избранное </span>
+                      В избранное
                     </button>
                   </div>
                   <div class="hotel-card__rating">
@@ -358,7 +361,7 @@
               </li>
               <li class="card-list__item">
                 <div class="hotel-card">
-                  <a class="hotel-card__link">
+                  <a href="#" class="hotel-card__link">
                     <img
                       class="hotel-card__img"
                       width="300"
@@ -378,10 +381,10 @@
                   </div>
                   <div class="hotel-card__btns">
                     <button class="btn btn--card" type="button">
-                      <span> Подробнее </span>
+                      Подробнее
                     </button>
                     <button class="btn btn--blue" type="button">
-                      <span> В избранное </span>
+                      В избранное
                     </button>
                   </div>
                   <div class="hotel-card__rating">
@@ -405,7 +408,7 @@
               </li>
               <li class="card-list__item">
                 <div class="hotel-card">
-                  <a class="hotel-card__link">
+                  <a href="#" class="hotel-card__link">
                     <img
                       class="hotel-card__img"
                       width="300"
@@ -425,10 +428,10 @@
                   </div>
                   <div class="hotel-card__btns">
                     <button class="btn btn--card" type="button">
-                      <span> Подробнее </span>
+                      Подробнее
                     </button>
                     <button class="btn btn--green" type="button">
-                      <span> В избранном </span>
+                      В избранном
                     </button>
                   </div>
                   <div class="hotel-card__rating">
@@ -450,7 +453,7 @@
 
               <li class="card-list__item">
                 <div class="hotel-card">
-                  <a class="hotel-card__link">
+                  <a href="#" class="hotel-card__link">
                     <img
                       class="hotel-card__img"
                       width="300"
@@ -469,11 +472,9 @@
                     </div>
                   </div>
                   <div class="hotel-card__btns">
-                    <button class="btn" type="button">
-                      <span> Подробнее </span>
-                    </button>
+                    <button class="btn" type="button">Подробнее</button>
                     <button class="btn btn--blue" type="button">
-                      <span> В избранное </span>
+                      В избранное
                     </button>
                   </div>
                   <div class="hotel-card__rating">
@@ -495,7 +496,7 @@
             </ul>
             <div class="hotels-catalog__more-hotels">
               <button class="btn btn--interest-blue btn--wide" type="button">
-                <span> Загрузить ещё </span>
+                Загрузить ещё
               </button>
             </div>
 
@@ -505,18 +506,27 @@
               </h2>
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--current" href="#"
-                    >1</a
+                  <a
+                    class="pagination__link pagination__link--current"
+                    href="#"
+                  >
+                    <span class="pagination__number">1</span></a
                   >
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link" href="#">2</a>
+                  <a class="pagination__link" href="#"
+                    ><span class="pagination__number">2</span></a
+                  >
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link" href="#">3</a>
+                  <a class="pagination__link" href="#"
+                    ><span class="pagination__number">3</span></a
+                  >
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link" href="#">4</a>
+                  <a class="pagination__link" href="#"
+                    ><span class="pagination__number">4</span></a
+                  >
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link">...</a>
@@ -525,7 +535,9 @@
                   >
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination__link" href="#">10</a>
+                  <a class="pagination__link" href="#"
+                    ><span class="pagination__number">10</span></a
+                  >
                 </li>
               </ul>
 
@@ -566,8 +578,10 @@
               type="email"
               name="user-email"
               placeholder="Ваш e-mail"
+              autocomplete="off"
+              required
             />
-            <button class="btn btn--interest-blue" type="submit">
+            <button class="btn btn--interest-blue" type="submit" value="submit">
               Подписаться
             </button>
           </form>
@@ -651,6 +665,7 @@
               d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"
             />
           </svg>
+          <span class="visually-hidden"> Логотип Html академии </span>
         </a>
       </footer>
     </div>
