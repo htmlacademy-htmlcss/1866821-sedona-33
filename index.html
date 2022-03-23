@@ -9,13 +9,14 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header__inner">
-          <img
-            class="page-header__logo"
-            width="139"
-            height="70"
-            alt="Логотип города Седона"
-            src="img/common/logo_sedona_main.svg"
-          />
+          <a href="index.html" class="page-header__logo">
+            <img
+              width="139"
+              height="70"
+              alt="Логотип города Седона"
+              src="img/common/logo_sedona_main.svg"
+            />
+          </a>
           <nav class="main-navigation main-navigation--main">
             <ul class="main-navigation__list main-navigation__list--main">
               <li class="main-navigation__item main-navigation__item--current">
@@ -72,14 +73,14 @@
                     />
                   </svg>
 
-                  <span class="visually-hidden"> Количество лайков </span>
+                  <span class="visually-hidden">
+                    Количество гостиниц в избранном
+                  </span>
                 </a>
-                <span class="main-navigation__likes-number"> 12 </span>
+                <span class="main-navigation__hotels-number"> 12 </span>
               </li>
             </ul>
-            <button class="btn btn--main-nav">
-              <span> Хочу сюда! </span>
-            </button>
+            <a href="#" class="btn btn--main-nav"> Хочу сюда! </a>
           </nav>
         </div>
       </header>
@@ -87,7 +88,6 @@
       <main class="page-content">
         <section class="top-info">
           <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-          <div class="top-info__background"></div>
           <img
             class="top-info__title-img"
             src="img/index/main_title.svg"
@@ -337,6 +337,7 @@
               d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"
             />
           </svg>
+          <span class="visually-hidden"> Логотип HTML академии </span>
         </a>
       </footer>
 
@@ -408,6 +409,9 @@
                         fill="black"
                       />
                     </svg>
+                    <span class="visually-hidden">
+                      Уменьшить количество взрослых
+                    </span>
                   </button>
                   <input
                     class="modal__adults-number"
@@ -437,36 +441,51 @@
                         />
                       </g>
                     </svg>
+                    <span class="visually-hidden">
+                      Увеличить количество взрослых
+                    </span>
                   </button>
                 </div>
               </div>
 
               <div class="modal__form-col modal__form-col--caution">
                 <label class="modal__children-label">Дети:</label>
-                <span class="modal__children-caution"
-                  ><svg
-                    width="1"
-                    height="9"
-                    viewBox="0 0 1 9"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+
+                <span class="modal__tooltip">
+                  <button
+                    class="modal__tooltip-toggle"
+                    type="button"
+                    aria-labelledby="tooltip-label"
                   >
-                    <g clip-path="url(#clip0_18711_289)">
-                      <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
-                      <path d="M1 0H0V1H1V0Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_18711_289">
-                        <rect width="1" height="9" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="modal__children-popup"
+                    <svg
+                      class="modal__tooltip-icon"
+                      width="1"
+                      height="9"
+                      viewBox="0 0 1 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_18711_289)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                        <path d="M1 0H0V1H1V0Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_18711_289">
+                          <rect width="1" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span
+                    class="modal__tooltip-text"
+                    role="tooltip"
+                    id="tooltip-label"
                     >Укажите количество детей, которые будут с вами, возраст
                     которых от 6 до 18 лет. Дети до 6 лет размещаются
                     бесплатно.</span
                   >
                 </span>
+
                 <div class="modal__children">
                   <button
                     class="modal__sign modal__sign--minus"
@@ -486,6 +505,9 @@
                         fill="black"
                       />
                     </svg>
+                    <span class="visually-hidden">
+                      Уменьшить количество детей
+                    </span>
                   </button>
                   <input
                     class="modal__children-number"
@@ -515,13 +537,16 @@
                         />
                       </g>
                     </svg>
+                    <span class="visually-hidden">
+                      Увеличить количество детей
+                    </span>
                   </button>
                 </div>
               </div>
             </div>
 
             <button class="btn btn--interest-blue btn--wide" type="submit">
-              <span> Найти </span>
+              Найти
             </button>
           </form>
         </div>
